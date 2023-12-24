@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .swiper-slide {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 150px;
+            color: #020000d6;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .book-now-btn,
+        .back-btn {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .book-now-btn:hover,
+        .back-btn:hover {
+            background-color: #27ae60;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('images/con20.jpg');">
+                <div class="container">
+                    <div class="message">Thank you! Your message has been received.</div>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/con18.jpg');">
+                <div class="container">
+                    <div class="message">Don't wait too long and miss out on the experience of our hotel.</div>
+                    <div class="button-container">
+                        <a href="index2.html" class="book-now-btn">Book Now</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/con17.jpg');">
+                <div class="container">
+                    <div class="message">You can learn more about our hotel and services.</div>
+                    <div class="button-container">
+                       
+                        <a href="index.html" class="back-btn">Back to Home Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            effect: "coverflow",
+            spaceBetween: 0,
+            grabCursor: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 1,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+</body>
+</html>
+

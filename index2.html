@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hotel.css" />
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/php4.jpg"); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .reservation {
+            background-color: rgba(255, 255, 255, 0.57);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+            margin-top: 25px;
+        }
+
+        .make {
+            text-align: center;
+            font-size: 28px !important;
+            margin-bottom: 10px !important;
+            color: #202558; 
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 3px; 
+            color: #202558;
+            
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            
+        }
+        option {
+            background-color: transparent !important;
+            }
+
+        .btn {
+            background-color: #3498db !important;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px !important;
+            transition: background-color 0.3s ease; 
+        }
+
+        .btn:hover {
+            background-color: #297db9 !important;
+        }
+
+        /* Back to home page button */
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #297db9;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">Back to Home Page</a>
+
+    <div class="reservation">
+        <div class="make">This Room Is Available! You Can Book Now</div>   
+        <form action="index4.html" method="post" >
+            <div class="flex">
+                <div class="box">
+                    <p for="name">Name</p>
+                    <input id="name" type="text" name="name" class="input" required style="color: #202558;">
+                </div>
+                <div class="box">
+                    <p for="email">Email</p>
+                    <input id="email" type="email" name="email" class="input" required style="color: #202558;">
+                </div>
+                <div class="box">
+                    <p for="phone">Phone</p>
+                    <input id="phone" type="text" name="phone" class="input" required style="color: #202558;">
+                </div>
+                <div class="box">
+                    <p for="room">Rooms</p>
+                    <select id="room" name="rooms" class="input" required style="color: #202558;">
+                        <option value="1">1 Room</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                        <option value="4">4 Rooms</option>
+                        <option value="5">5 Rooms</option>
+                        <option value="6">6 Rooms</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p for="checkin">Check In</p>
+                    <input id="checkin" type="date" name="check_in" class="input" required style="color: #202558;">
+                </div>
+                <div class="box">
+                    <p for="checkout">Check Out</p>
+                    <input id="checkout" type="date" name="check_out" class="input" required style="color: #202558;">
+                </div>
+                <div class="box">
+                    <p for="adult">Adults</p>
+                    <select id="adult" name="adults" class="input" required style="color: #202558;">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                        <option value="6">6 Adults</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p for="child">Childs</p>
+                    <select id="child" name="childs" class="input" required style="color: #202558;">
+                        <option value="0">0 Child</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Childs</option>
+                        <option value="3">3 Childs</option>
+                        <option value="4">4 Childs</option>
+                        <option value="5">5 Childs</option>
+                        <option value="6">6 Childs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttom">
+                <input type="submit" value="Book Now" name="check" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

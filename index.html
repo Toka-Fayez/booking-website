@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        
+    <!--siwper-->    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   
+   <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/hotel.css" />
+        <title>Blue To Hotel</title>
+
+    </head>
+    <body>
+        <!--start header-->
+        <div class="header">
+            <div class="container">
+                <img class="logo" src="images/logo.png" alt="">
+                <div class="link">
+                    <span class="icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <ul>
+                        <li><a href="#about1">About</a></li>
+                        <li><a href="#reservation1">Reservation</a></li>
+                        <li><a href="#gallery1">Gallery</a></li>
+                        <li><a href="#contact1">Contact</a></li>
+                        <li><a href="#review1">Reviews</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end header--> 
+       <!--start landing section-->
+    <div class="landing">
+        <div class="into-section">
+            <h1>BLUE TO</h1>
+            <p>A Best Place To Enjoy Your Life</p>
+        </div>
+    </div>
+<!--end landing section-->
+
+<!--start availability section-->
+<div class="availability">
+    <form  action="index2.html" method="post" >
+        <div class ="flex">
+            <div class="box">
+                <p>Check In</p>
+                <input type="date" name="check_in1" class="input" required>
+            </div>
+            <div class="box">
+                <p>Check Out</p>
+                <input type="date" name="check_out1" class="input" required>
+            </div>
+            <div class="box">
+                <p>Adults</p>
+                <select  name="adults1" class="input" required>
+                    
+                    <option value="1">1 Adults</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+
+                </select>
+            </div>
+            <div class="box">
+                <p>Childs</p>
+                <select  name="childs1" class="input" required>
+                    <option value="0">0 Childs</option>
+                    <option value="1">1 Childs</option>
+                    <option value="2">2 Childs</option>
+                    <option value="3">3 Childs</option>
+                    <option value="4">4 Childs</option>
+                    <option value="5">5 Childs</option>
+                    <option value="6">6 Childs</option>
+
+                </select>
+            </div>
+            <div class="box">
+                <p>Rooms</p>
+                <select  name="rooms1" class="input" required>
+                    
+                    <option value="1">1 Rooms</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="buttom">
+            <input type="submit" value="Check Availability" name="check" class="btn" >
+        </div>
+        
+    </form>
+</div>
+<!--end availability section-->
+<!-- start about section-->
+<div class="about" id="about1">
+    <div class="space"></div>
+    <div class="row">
+        <div class="image">
+            <img src="images/about1.jpeg">
+        </div>
+        <div class="content">
+            <h3>Best Staff</h3>
+            <p>At our hotel, we take pride in not only providing upscale accommodation services but also in our professional and friendly team. Our team consists of individuals committed to delivering an exceptional experience for our guests. By paying attention to the smallest details and actively listening to the needs of our guests, our team works diligently to ensure the comfort and happiness of every visitor</p>
+        
+        </div>
+    </div>
+    <div class="row revers">
+        <div class="image">
+            <img src="images/about2.webp">
+        </div>
+        <div class="content">
+            <h3>Best Food</h3>
+            <p>Enjoy an exceptional dining experience at our hotel, where skilled chefs blend creative ideas to present the most delicious cuisines. Our restaurant boasts a diverse menu catering to all tastes, with meticulous details and unique presentations that make each meal an unforgettable moment.</p>
+        </div>
+    </div>
+</div>
+<!-- end about section-->
+<!--start reservation-->
+<div class="reservation" id="reservation1">
+    <div class="make">Make A Reservation</div>   
+    <form action="index4.html" method="post" >
+        <div class ="flex">
+            <div class="box">
+                <p for="name">Name</p>
+                <input id="name" type="text" name="name" class="input" required>
+            </div>
+            <div class="box">
+                <p for="email">Email</p>
+                <input id="email" type="email" name="email" class="input" required>
+            </div>
+            <div class="box">
+                <p for="phone">Phone</p>
+                <input id="phone" type="text" name="phone" class="input" required>
+            </div>
+            <div class="box">
+                <p for="room">Rooms</p>
+                <select id="room" name="rooms" class="input" required>
+                    
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+
+                </select>
+            </div>
+            <div class="box">
+                <p for="chrckin">Check In</p>
+                <input id="checkin" type="date" name="check_in" class="input" required>
+            </div>
+            <div class="box">
+                <p for="checkout">Check Out</p>
+                <input id="checkout" type="date" name="check_out" class="input" required>
+            </div>
+            <div class="box">
+                <p for="adult">Adults</p>
+                <select id="adult" name="adults" class="input" required>
+                    
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+
+                </select>
+            </div>
+            <div class="box">
+                <p for="child">Childs</p>
+                <select id="child" name="childs" class="input" required>
+                    <option value="0">0 Child</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Childs</option>
+                    <option value="3">3 Childs</option>
+                    <option value="4">4 Childs</option>
+                    <option value="5">5 Childs</option>
+                    <option value="6">6 Childs</option>
+
+                </select>
+            </div>
+            
+        </div>
+        <div class="buttom">
+            <input type="submit" value="Book Now" name="check" class="btn">
+        </div>
+
+        
+    </form>
+</div>
+
+<!--end reservation-->
+<!--start gallery section-->
+<div class="gallery" id="gallery1">
+    <div class="gallery1">Gallery</div>
+    <div class="swiper gallery-slider">
+        <div class="swiper-wrapper">
+            <img src="images/gallery5.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery4.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery6.webp" class="swiper-slide" alt="">
+            <img src="images/gallery7.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery11.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery12.jpg" class=swiper-slide alt="">
+
+         </div>
+    <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--end gallery section-->
+
+<!--strat contact section-->
+<div class="contact" id="contact1">
+    <div class="con">Contact Us</div> 
+    <div class="make"></div>   
+    
+        <div class ="row">
+            <div class="left-side">
+            <form action="index3.html" method="post" >
+            
+                <div class="box">
+                    <p>Name</p>
+                    <input type="text" name="name2" class="input" required>
+                </div>
+                <div class="box">
+                    <p>Email</p>
+                    <input type="email" name="email2" class="input" required>
+                </div>
+                <div class="box">
+                    <p>Phone</p>
+                    <input type="text" name="phone2" class="input" required>
+                </div>
+                <div class="box">
+                    <p for="message">Write Message</p>
+                    <textarea id="message" name="massage" rows="4" cols="50" class="input" required></textarea>
+                </div>
+                <div class="button">
+                    <input   type="submit" value="Send Massage" name="send" class="btn"  >
+                </div>
+                
+            </form> 
+            </div>
+            
+            <div class="right-side">
+                <div class="row">
+                    <div class="contact info">
+                        <p>
+                         <span class="d-block">Address:</span><br>
+                         <span class="text-block">98 West 21th Street, Suite 721 New York NY 10016</span>
+                        </p>
+                        <p>
+                         <span class="d-block">Phone:</span><br>
+                         <span class="text-block">(+1) 234 4567 8910</span>
+                        </p>
+                        <p>
+                         <span class="d-block">Email:</span><br>
+                         <span class="text-block">info@yourdomain.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</div>                  
+<!--end contact section-->
+
+<!-- start reviews section  -->
+
+<div class="reviews" id="review1">
+
+    <div class="swiper reviews-slider">
+ 
+       <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+             <img src="images/pic-2.png" alt="">
+             <h3>Karen Jordan</h3>
+             <p>Outstanding service and luxurious accommodations. The staff went above and beyond to make our stay unforgettable. Highly recommended!</p>
+          </div>
+          <div class="swiper-slide box">
+             <img src="images/pic-1.png" alt="">
+             <h3>Robert David</h3>
+             <p>A hidden gem! This hotel combines modern elegance with a warm and welcoming atmosphere. The attention to detail is impeccable.</p>
+          </div>
+          <div class="swiper-slide box">
+             <img src="images/pic-6.png" alt="">
+             <h3>Seo-hyun</h3>
+             <p>Great location, friendly staff, and spotless rooms. The amenities are top-notch, and the overall experience exceeded our expectations.</p>
+          </div>
+          <div class="swiper-slide box">
+             <img src="images/pic-3.png" alt="">
+             <h3>john deo</h3>
+             <p>An architectural masterpiece! The hotel's design is both innovative and elegant. Every corner is a photo opportunity. Truly a five-star experience.</p>
+          </div>
+          <div class="swiper-slide box">
+             <img src="images/pic-4.png" alt="">
+             <h3>Mary Jordan</h3>
+             <p>Stunning views, impeccable service, and a serene ambiance. This hotel exceeded our expectations, and we were treated like royalty throughout our stay.</p>
+          </div>
+          <div class="swiper-slide box">
+             <img src="images/pic-5.png" alt="">
+             <h3>Alex William</h3>
+             <p>Unparalleled luxury and attention to detail. From the opulent rooms to the gourmet dining, every aspect of our stay was exceptional. Highly recommended for a luxurious getaway.</p>
+          </div>
+       </div>
+ 
+       <div class="swiper-pagination"></div>
+    </div>
+ 
+</div>
+ 
+ <!--  end reviews section -->
+
+     <script>
+        function popup1(){
+  
+            swal( "Maasage Sent Successfully!","", "success");
+        }
+       
+     </script>
+  
+ 
+
+<!--  js file link  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+    </body>
+</html>
